@@ -9,7 +9,7 @@ src_satellite:
     sat_name:
       SATELLITE_NAME: adv__sat_contact
     hashdiff:                
-      HASHDIFF: HASHDIFF
+      HASHDIFF: CONTACT_HASHDIFF
 src_ldts: LOAD_DATETIME
 src_source: RECORD_SOURCE
 {%- endset -%}
