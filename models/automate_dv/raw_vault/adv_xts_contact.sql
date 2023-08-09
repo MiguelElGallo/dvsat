@@ -7,7 +7,7 @@ src_pk: CONTACTID
 src_satellite:
   SATELLITE_CONTACT:
     sat_name:
-      SATELLITE_NAME: ADV__SAT_CONTACT
+      SATELLITE_NAME: SATELLITE_NAME_1
     hashdiff:                
       HASHDIFF: CONTACT_HASHDIFF
 src_ldts: LOAD_DATETIME
