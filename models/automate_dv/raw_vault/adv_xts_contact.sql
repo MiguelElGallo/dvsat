@@ -5,9 +5,9 @@
 source_model: adv__stg_salesforce_contacts
 src_pk: CONTACTID
 src_satellite:
-  adv__sat_contact:
+  SATELLITE_CONTACT:
     sat_name:
-      SATELLITE_NAME: adv__sat_contact
+      SATELLITE_NAME: ADV__HUB_CONTACT
     hashdiff:                
       HASHDIFF: CONTACT_HASHDIFF
 src_ldts: LOAD_DATETIME
