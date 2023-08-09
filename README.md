@@ -1,28 +1,32 @@
-[![Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-# Data Vault automation with dbt
-This is a template dbt project showcasing two most commonly used dbt packages for data vault automation.
-## Motivation & goals
-To help you get started with Data Vault and dbt, this project transforms sample salesforce data into Raw Data Vault layer. It uses the two most common dbt packages built for Data Vault dbt projects to build hubs, links and satellites. The goal is to help you understand the functionality of both packages as well as show how they differ, therefore help you decide which one is the right choice for you, if any.
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/25080503/237990810-ab2e14cf-a449-47ac-8c72-6f0857816194.png#gh-light-mode-only" alt="AutomateDV">
+  <img src="https://user-images.githubusercontent.com/25080503/237990915-6afbeba8-9e80-44cb-a57b-5b5966ab5c02.png#gh-dark-mode-only" alt="AutomateDV">
 
-## What you will find inside
-This demo project contains four source csv files, which you can load into your data warehouse by running `dbt seed`.
-All models are building on top of these source tables in following layer structure:
-- psa -> persistent staging area,
-- stage -> staging layer preparing data for raw data vault load,
-- raw_vault -> raw data vault layer.
+  [![Slack](https://img.shields.io/badge/Slack-Join-yellow?style=flat&logo=slack)](https://join.slack.com/t/dbtvault/shared_invite/enQtODY5MTY3OTIyMzg2LWJlZDMyNzM4YzAzYjgzYTY0MTMzNTNjN2EyZDRjOTljYjY0NDYyYzEwMTlhODMzNGY3MmU2ODNhYWUxYmM2NjA)
+</div>
 
-Here is a diagram of a simple model based on our source tables. It is a structure, we want to build with models in this repository.
-![diagram](https://github.com/Stevedow99/dbt_datavault_demo/raw/c369942c59283622e57969f70d61ddd0507a2651/assets/dbt_vault_img.png?raw=true)
+### dbt models for AutomateDV Snowflake Demonstration
 
+This is a downloadable example dbt project using [AutomateDV](https://github.com/Datavault-UK/automate-dv) to create a Data Vault 2.0 Data Warehouse
+based on the Snowflake TPC-H dataset.
 
-Stage and raw_vault layers are split into two folders, named after used packages. One of the goals of this repository is to show differences between the two packages, which we achieve by using the same macros from two different packages, so we can see how they differ.
+---
 
-## Using the template
-Before running any models, you will need to install `automate_dv` and `datavault4dbt` packages by running `dbt deps`.
-All models should work as it is. Feel free to play around with them to figure out how things work. In `dbt_project.yml` file, there are plenty of variables that can be leveraged to customise the behaviour of both packages. We suggest going through them to see how much you can change the respective frameworks without touching the macros. We left all of them as default values.
+#### AutomateDV Docs
+[![Documentation Status](https://readthedocs.org/projects/dbtvault/badge/?version=latest)](https://automate-dv.readthedocs.io/en/latest/?badge=latest)
 
-## Data quality packages by Infinite Lambda
-While we don't include any tests in this repository, in real project we strongly recommend having high test coverage. 
-To help you understand data quality issues in your project and test coverage of your data vault project, we suggest checking our following packages:
-- [dq_tools](https://hub.getdbt.com/infinitelambda/dq_tools/latest/)
-- [dq_vault](https://hub.getdbt.com/infinitelambda/dq_vault/latest/)
+Click the button above to read the latest AutomateDV docs.
+
+A step-by-step user guide for using this demo is available [here](https://automate-dv.readthedocs.io/en/latest/worked_example/)
+
+---
+[dbt](https://www.getdbt.com/) is a registered trademark of dbt Labs).
+
+Check them out below:
+
+#### dbt Docs
+- [What is dbt](https://dbt.readme.io/docs/overview)?
+- Read the [dbt viewpoint](https://dbt.readme.io/docs/viewpoint)
+- [Installation](https://dbt.readme.io/docs/installation)
+- Join the [chat](http://ac-slackin.herokuapp.com/) on Slack for live questions and support.
+---
