@@ -2,7 +2,7 @@
 
 {%- set datepart = "day" -%}
 {%- set start_date = "TO_DATE('2023/07/01', 'yyyy/mm/dd')" -%}
-{%- set end_date = "TO_DATE('2021/09/01', 'yyyy/mm/dd')" -%}
+{%- set end_date = "TO_DATE('2023/09/01', 'yyyy/mm/dd')" -%}
 
 WITH as_of_date AS (
     {{ dbt_utils.date_spine(datepart=datepart, 
