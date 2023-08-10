@@ -8,4 +8,4 @@ SELECT
 	a.METAFILENAME  
 	a.METATIMESTAMP  
 FROM
-   {{ source('STAGE_TABLES', 'CUSTOMER') }} as a
+   {{ source('source', 'CUSTOMER') }} as a
