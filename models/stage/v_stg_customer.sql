@@ -1,7 +1,6 @@
 {%- set yaml_metadata -%}
 source_model: 'raw_customer'
 derived_columns:
-  CUSTOMER_KEY: 'CUSTOMERKEY'
   RECORD_SOURCE: '!SOURCE_CUSTOMERS'
   EFFECTIVE_FROM: 'METATIMESTAMP'
 hashed_columns:
