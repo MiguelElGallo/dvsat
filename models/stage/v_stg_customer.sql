@@ -3,6 +3,7 @@ source_model: 'raw_customer'
 derived_columns:
   RECORD_SOURCE: '!SOURCE_CUSTOMERS'
   EFFECTIVE_FROM: 'METATIMESTAMP'
+  SATELLITE_NAME: "!SAT_CUSTOMER_DETAILS"
 hashed_columns:
   CUSTOMER_PK: 'CUSTKEY'
 
