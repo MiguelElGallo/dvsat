@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: source
+    database: XTS
+    schema: STAGE_TABLES
+    tables:
+       - name: CUSTOMER
