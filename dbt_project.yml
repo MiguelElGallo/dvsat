@@ -56,8 +56,8 @@ models:
       xts:
         +tags:
           - 'xts'
-    as_of_date:
-      +materialized: table
-      +tags:
-        - 'as_of_date'
-  
+      as_of_date:
+        +materialized: table
+        +tags:
+          - 'as_of_date'
+    
