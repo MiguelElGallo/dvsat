@@ -5,7 +5,7 @@ source_model: hub_customer
 src_pk: CUSTOMER_PK
 as_of_dates_table: as_of_date
 satellites: 
-  SAT_CUSTOMER_DETAILS:
+  sat_customer_details:
     pk:
       PK: CUSTOMER_PK
     ldts:
