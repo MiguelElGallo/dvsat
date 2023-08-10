@@ -3,7 +3,7 @@
 {%- set src_hashdiff = "CUSTOMER_HASHDIFF" -%}
 {%- set src_payload = [ "CUSTNAME","CUSTEMAIL","CUSTCOUNTRY", "CUSTCREATEDATE", "CUSTCHANGEDATE"] -%}
 {%- set src_eff = "EFFECTIVE_FROM" -%}
-{%- set src_ldts = "LOAD_DATE" -%}
+{%- set src_ldts = "METATIMESTAMP" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 
 {{ automate_dv.sat(src_pk=src_pk, src_hashdiff=src_hashdiff,
