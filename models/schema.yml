@@ -6,3 +6,7 @@ sources:
     schema: STAGE_TABLES
     tables:
        - name: CUSTOMER
+
+  - name: as_of_date
+    tables:
+        - name: as_of_date
