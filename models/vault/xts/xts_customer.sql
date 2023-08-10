@@ -6,7 +6,7 @@ src_pk: CUSTOMER_PK
 src_satellite:
   SATELLITE_CUSTOMER:
     sat_name:
-      SATELLITE_NAME: sat_customer_details
+      sat_customer_details: SATELLITE_NAME
     hashdiff:                
       HASHDIFF: CUSTOMER_HASHDIFF
 src_ldts: METATIMESTAMP
