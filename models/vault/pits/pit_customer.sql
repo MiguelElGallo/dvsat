@@ -3,7 +3,7 @@
 {%- set yaml_metadata -%}
 source_model: hub_customer
 src_pk: CUSTOMER_PK
-as_of_dates_table: AS_OF_DATE
+as_of_dates_table: as_of_date
 satellites: 
   SAT_CUSTOMER_DETAILS:
     pk:
