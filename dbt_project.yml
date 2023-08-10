@@ -49,3 +49,10 @@ models:
       t_links:
         +tags:
           - 't_link'
+    vault:
+      pits:
+        +tags:
+          - 'pits'
+      xts:
+        +tags:
+          - 'xts'
