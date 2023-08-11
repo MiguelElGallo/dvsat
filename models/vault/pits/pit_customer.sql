@@ -13,6 +13,7 @@ satellites:
 
 stage_tables: 
   V_STG_CUSTOMER: METATIMESTAMP  
+src_ldts: METATIMESTAMP
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
