@@ -1,5 +1,3 @@
-{{ config(materialized='pit_incremental') }}
-
 {%- set yaml_metadata -%}
 source_model: hub_customer
 src_pk: CUSTOMER_PK
