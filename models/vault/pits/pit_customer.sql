@@ -7,7 +7,7 @@ as_of_dates_table: as_of_date
 satellites: 
   sat_customer_details:
     pk:
-      HKEY: CUSTOMER_PK
+      PK: CUSTOMER_PK
     ldts:
       LDTS: METATIMESTAMP
 
