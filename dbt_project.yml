@@ -29,7 +29,7 @@ models:
       +tags:
         - 'raw'
     stage:
-      +materialized: view
+      +materialized: incremental
       +tags:
         - 'stage'
       +enabled: true
@@ -53,6 +53,7 @@ models:
       pits:
         +tags:
           - 'pits'
+        +materialized: pit_incremental
       xts:
         +tags:
           - 'xts'
