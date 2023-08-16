@@ -1,0 +1,5 @@
+{
+    "markdown.validate.ignoredLinks": [
+        "models/hubs/hub_customer.sql"
+    ]
+}

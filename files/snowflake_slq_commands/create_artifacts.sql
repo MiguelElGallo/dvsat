@@ -1,0 +1,27 @@
+create database if not exists XTS;
+use database XTS;
+
+CREATE OR REPLACE FILE FORMAT STAGE_TABLES.CSVFORMAT
+   TYPE = 'CSV'
+   FIELD_DELIMITER = ','
+   SKIP_HEADER = 1,
+   FIELD_OPTIONALLY_ENCLOSED_BY='"';
+
+
+CREATE OR REPLACE STAGE xtsstage
+  FILE_FORMAT = STAGE_TABLES.CSVFORMAT;
+
+CREATE OR REPLACE SCHEMA STAGE_TABLES;
+USE SCHEMA STAGE_TABLES;
+
+CREATE OR REPLACE TABLE customer (
+  custKey NUMBER not NULL,
+  custName VARCHAR(100) not  NULL,
+  custEmail VARCHAR(60),
+  custCountry VARCHAR(30),
+  custCreateDate DATE,
+  custChangeDate DATE,
+  metaFilename VARCHAR(100),
+  metaTimeStamp DATETIME
+)
+
