@@ -107,3 +107,17 @@ And this is what we have in the XTS
 ![In xts ](media/results_xts.png)
 
 At this point trying to figure out how the XTS can help fix the out of sequence data.
+
+## Update 22.Aug
+
+One of they key functions (at least in my opinion) of the XTS is helping you notice if there was a out of sequence data loaded. For that it needs to have at least two date columns, for that you need to use the parameter: src_extra_columns of the automate_dv macro:
+
+```
+{{ automate_dv.xts(src_pk=src_pk, src_satellite=src_satellite, src_ldts=src_ldts,
+                   src_source=src_source, source_model=source_model, src_extra_columns=["CUSTCHANGEDATE"]) }}
+```
+
+With this new column is easy to spot the loads that have out of sequence data:
+
+![New XTS](media/NewXTS.png)
+
