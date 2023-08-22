@@ -22,4 +22,4 @@ src_source: RECORD_SOURCE
 {% set src_source = metadata_dict["src_source"] %}
 
 {{ automate_dv.xts(src_pk=src_pk, src_satellite=src_satellite, src_ldts=src_ldts,
-                   src_source=src_source, source_model=source_model, src_extra_columns=[CUSTCHANGEDATE]) }}
+                   src_source=src_source, source_model=source_model, src_extra_columns=["CUSTCHANGEDATE"]) }}
